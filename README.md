@@ -8,7 +8,7 @@ Webscrapping stove information from https://cleancooking.org/ with selenium (pyt
 - python
 - selenium ([documentation](https://selenium-python.readthedocs.io/index.html))
 - Web browser: Google Chrome (https://www.google.com/chrome/) 
-- Chrome webdriver: https://chromedriver.chromium.org/downloads (it has to be the same version of your regular 
+- Chrome webdriver: https://chromedriver.chromium.org/downloads (it has to be the same version of your regular Google Chrome web browser)
 
 
 ## Steps
