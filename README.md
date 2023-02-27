@@ -1,3 +1,4 @@
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamlit.app/)                     
 # stoves-catalog-webscrapping
 Webscrapping stove information from https://cleancooking.org/ with selenium (python).
 
@@ -9,6 +10,7 @@ Webscrapping stove information from https://cleancooking.org/ with selenium (pyt
 - selenium ([documentation](https://selenium-python.readthedocs.io/index.html))
 - Web browser: Google Chrome (https://www.google.com/chrome/) 
 - Chrome webdriver: https://chromedriver.chromium.org/downloads (it has to be the same version of your regular Google Chrome web browser)
+- Streamlit and plotly for visualization
 
 
 ## Steps
