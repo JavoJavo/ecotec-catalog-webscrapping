@@ -35,3 +35,4 @@ Pending...
 4. Search for unadded fields that could be present later on on the stoves, but because they were not present on the first stoves (where the program was based on) they were omitted.
 5. Develop visualizations, maybe use streamlit.
 6. Remove repeated columns. Check out why they are repeated and make sure no data is lost.
+7. Add demo visualizations here on the README.
