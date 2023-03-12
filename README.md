@@ -26,7 +26,8 @@ Webscrapping stove information from https://cleancooking.org/ with selenium (pyt
 
 
 ## Visualizations
-Pending...
+https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamlit.app/
+DEMO visualizations pending...
 
 ## TODO
 1. Handle the double quotes so it doesn't mess the resulting csv file.
