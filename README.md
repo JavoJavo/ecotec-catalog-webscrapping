@@ -26,7 +26,7 @@ Webscrapping stove information from https://cleancooking.org/ with selenium (pyt
 
 
 ## Visualizations
-https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamlit.app/
+https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamlit.app/               
 DEMO visualizations pending...
 
 ## TODO
