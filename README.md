@@ -20,11 +20,13 @@ Ecotecs pending from scrapping ...
 3. If you saved the chrome webdriver in another directory add its path at line 70 of the `capture_catalog.py` file, where the variable driver is initialized.
 4. Run `capture_catalog.py` and zoom out to the max when the new window pops up (depending on the size of your screen, some elements may not be available to click on if the zoom is in its default value).
 
+### Results
+- Some stoves contained double quotes, so that messed the resulting csv. At the moment that was handled manually and one instance was deleted completely because it couldn't be made sense of. 
+
 ## Lighting catalog
 Scrapped using `scrap_phillips_2.ipynb`.    
 
-## Results
-- Some stoves contained double quotes, so that messed the resulting csv. At the moment that was handled manually and one instance was deleted completely because it couldn't be made sense of. 
+
 
 
 ## Visualizations
