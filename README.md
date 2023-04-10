@@ -27,7 +27,9 @@ Webscrapping stove information from https://cleancooking.org/ with selenium (pyt
 
 ## Visualizations
 https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamlit.app/               
-DEMO visualizations pending...
+### DEMO visualizations
+![demo1](https://github.com/JavoJavo/stoves-catalog-webscrapping/blob/main/peso_neto-flujo_luminoso-vida_util-potencia.png)
+![demo2](https://github.com/JavoJavo/stoves-catalog-webscrapping/blob/main/pot_cap-stove_feed_max-stove_price_average-stove_flife-Fit_line.png)
 
 ## TODO
 1. Handle the double quotes so it doesn't mess the resulting csv file.
