@@ -32,10 +32,10 @@ https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamli
 ![demo2](https://github.com/JavoJavo/stoves-catalog-webscrapping/blob/main/pot_cap-stove_feed_max-stove_price_average-stove_flife-Fit_line.png)
 
 ## TODO
-~~1. Handle the double quotes so it doesn't mess the resulting csv file.~~
+~~1. Handle the double quotes so it doesn't mess the resulting csv file.~~             
 2. Check empty fields and add an error label to the csv.
 3. Fix bugs that prevent existing fields from being captured if they exist.
 4. Search for unadded fields that could be present later on on the stoves, but because they were not present on the first stoves (where the program was based on) they were omitted.
-~~5. Develop visualizations, maybe use streamlit.~~
+~~5. Develop visualizations, maybe use streamlit.~~             
 6. Remove repeated columns. Check out why they are repeated and make sure no data is lost.
-~~7. Add demo visualizations here on the README.~~
+~~7. Add demo visualizations here on the README.~~               
