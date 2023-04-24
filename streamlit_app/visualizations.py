@@ -69,24 +69,46 @@ if st.checkbox('Color', value=False):
     
 
 size=None
+agg=False
+import copy
 if st.checkbox('Size', value=False):
-    try:
-        sub_data = sub_data[sub_data[color].notna()]
-        #sub_data = sub_data[sub_data[symbol].notna()]
-    except:
-        pass
-    size = st.selectbox('size', set(sub_data.columns)-set([y,x,color]), key='225dfsddsf4')
+    if st.checkbox('Aggregate size (and mean of other values)', value=False):
+        size = st.selectbox('size', set(sub_data.columns)-set([y,x,color]), key='225dfsddsf4')
+        count = sub_data[size].value_counts().to_dict()
+        sub_data_copy = copy.deepcopy(sub_data)
+        sub_data = sub_data.groupby(size).mean()
+        sub_data[size+' count'] = [count[i] for i in sub_data_copy[size].value_counts().index]
+        #size = st.selectbox('size', set(sub_data.columns)-set([y,x,color]), key='225dfsddsf4')
+        size = size+' count'
+        agg=True
+    else:
+        agg=False
+        try:
+            sub_data = sub_data[sub_data[color].notna()]
+            #sub_data = sub_data[sub_data[symbol].notna()]
+        except:
+            pass
+        size = st.selectbox('size', set(sub_data.columns)-set([y,x,color]), key='225dfsddsf4')
     sub_data = sub_data[sub_data[size].notna()]
 #print(data.columns)
 
-if st.checkbox('Fit line', value=False):
+    
+if agg==True:
     fig2 = px.scatter(sub_data, x=x, y=y,
                  size=size, color=color,
-                     hover_name=sub_data[name],
-                      trendline="lowess")#, text=sub_data.stove_details_name)
+                      hover_name=['Value for aggregated count: '+str(c) for c in count.keys()]
+                     #hover_name=sub_data[name]
+                     )
     st.plotly_chart(fig2)
 else:
-    fig2 = px.scatter(sub_data, x=x, y=y,
-                 size=size, color=color,
-                     hover_name=sub_data[name])
-    st.plotly_chart(fig2)
+    if st.checkbox('Fit line', value=False):
+        fig2 = px.scatter(sub_data, x=x, y=y,
+                     size=size, color=color,
+                         hover_name=sub_data[name],
+                          trendline="lowess")#, text=sub_data.stove_details_name)
+        st.plotly_chart(fig2)
+    else:
+        fig2 = px.scatter(sub_data, x=x, y=y,
+                     size=size, color=color,
+                         hover_name=sub_data[name])
+        st.plotly_chart(fig2)
