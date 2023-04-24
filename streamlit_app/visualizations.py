@@ -23,7 +23,7 @@ if dataset == 'stoves':
     name = 'stove_details_name'
 
 elif dataset == 'philips':
-    DATA_URL = os.path.join(os.path.dirname(__file__), 'focos_philips2.csv')
+    DATA_URL = os.path.join(os.path.dirname(__file__), 'focos_philips5.csv')
     st.title("Philips Catalog data")
 
     @st.cache(persist=False)
