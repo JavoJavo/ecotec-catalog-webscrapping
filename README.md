@@ -1,11 +1,11 @@
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamlit.app/)                     
-# stoves-catalog-webscrapping
-Webscrapping stove information from https://cleancooking.org/ with selenium (python).
+# ecotec-catalog-webscrapping
+Ecotecs pending from scrapping ...   
 
 
 ## Resources
 - OS: Windows 11
-- web page: http://catalog.cleancookstoves.org/
+- web pages: http://catalog.cleancookstoves.org/, https://www.lighting.philips.com.mx/inicio
 - python
 - selenium ([documentation](https://selenium-python.readthedocs.io/index.html))
 - Web browser: Google Chrome (https://www.google.com/chrome/) 
@@ -13,16 +13,20 @@ Webscrapping stove information from https://cleancooking.org/ with selenium (pyt
 - Streamlit and plotly for visualization
 
 
-## Steps
+## Steps for webscrapping stove catalog
 1. Download the file `capture_catalog.py`.
 1. Check your google chrome version.
 2. Download [chrome webdriver](https://www.google.com/chrome/) with the same version as your google chrome version, preferably store it in the same directory as `capture_catalog.py`. Unzip it.
 3. If you saved the chrome webdriver in another directory add its path at line 70 of the `capture_catalog.py` file, where the variable driver is initialized.
 4. Run `capture_catalog.py` and zoom out to the max when the new window pops up (depending on the size of your screen, some elements may not be available to click on if the zoom is in its default value).
 
-
-## Results
+### Results
 - Some stoves contained double quotes, so that messed the resulting csv. At the moment that was handled manually and one instance was deleted completely because it couldn't be made sense of. 
+
+## Lighting catalog
+Scrapped using `scrap_phillips_2.ipynb`.    
+
+
 
 
 ## Visualizations
@@ -38,4 +42,5 @@ https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamli
 4. Search for unadded fields that could be present later on on the stoves, but because they were not present on the first stoves (where the program was based on) they were omitted.
 5. ~~Develop visualizations, maybe use streamlit.~~             
 6. Remove repeated columns. Check out why they are repeated and make sure no data is lost.
-7. ~~Add demo visualizations here on the README.~~               
+7. ~~Add demo visualizations here on the README.~~            
+8. Add more ecotecs.
