@@ -23,8 +23,13 @@ Ecotecs pending from scrapping ...
 ### Results
 - Some stoves contained double quotes, so that messed the resulting csv. At the moment that was handled manually and one instance was deleted completely because it couldn't be made sense of. 
 
-## Lighting catalog
+## Lighting catalog (philips)
 Scrapped using `scrap_phillips_2.ipynb`.    
+
+## Lighting catalog (home depot)
+Scrapped using `homedepot_lighting_scrapping.ipynb`.
+
+
 
 
 
@@ -35,6 +40,7 @@ https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamli
 ![demo1](https://github.com/JavoJavo/stoves-catalog-webscrapping/blob/main/peso_neto-flujo_luminoso-vida_util-potencia.png)
 ![demo2](https://github.com/JavoJavo/stoves-catalog-webscrapping/blob/main/pot_cap-stove_feed_max-stove_price_average-stove_flife-Fit_line.png)
 ![demo3](https://github.com/JavoJavo/ecotec-catalog-webscrapping/blob/main/1.png)
+![demo4](https://github.com/JavoJavo/ecotec-catalog-webscrapping/blob/main/2.png)
 
 ## TODO
 1. ~~Handle the double quotes so it doesn't mess the resulting csv file.~~             
