@@ -41,6 +41,7 @@ https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamli
 ![demo2](https://github.com/JavoJavo/stoves-catalog-webscrapping/blob/main/pot_cap-stove_feed_max-stove_price_average-stove_flife-Fit_line.png)
 ![demo3](https://github.com/JavoJavo/ecotec-catalog-webscrapping/blob/main/1.png)
 ![demo4](https://github.com/JavoJavo/ecotec-catalog-webscrapping/blob/main/2.png)
+![demo5](https://github.com/JavoJavo/ecotec-catalog-webscrapping/blob/main/3.png)
 
 ## TODO
 1. ~~Handle the double quotes so it doesn't mess the resulting csv file.~~             
