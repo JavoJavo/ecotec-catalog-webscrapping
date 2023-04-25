@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 
 import matplotlib.pyplot as plt
 
-dataset = st.selectbox('data', ['stoves','philips'], key='225sddssdd4')
+dataset = st.selectbox('data', ['stoves','philips','home depot'], key='225sddssdd4')
 if dataset == 'stoves':
 
     DATA_URL = os.path.join(os.path.dirname(__file__), 'stoves4.csv')
@@ -34,6 +34,21 @@ elif dataset == 'philips':
 
     data = load_data()
     name = 'Nombre del producto del pedido'
+    
+elif dataset == 'home depot':
+    DATA_URL = os.path.join(os.path.dirname(__file__), 'homedepot_lighting.csv')
+    st.title("Home Depot Catalog data")
+
+    @st.cache(persist=False)
+    def load_data():
+        data = pd.read_csv(DATA_URL, na_values=['Not Available','null'])
+        #data.drop(data.columns[[11,12,13,14,16,18,23,28,33,38,43,48,53]],axis=1,inplace=True)
+        return data
+
+    data = load_data()
+    name = 'Modelo'
+    
+    
 st.markdown('## Variable count')
 non_nans_per_column = {}
 for col,val in zip(data.columns,data.count()):
