@@ -5,7 +5,7 @@ Ecotecs pending from scrapping ...
 
 ## Resources
 - OS: Windows 11
-- web pages: http://catalog.cleancookstoves.org/, https://www.lighting.philips.com.mx/inicio
+- web pages: http://catalog.cleancookstoves.org/, https://www.lighting.philips.com.mx/inicio, https://www.homedepot.com.mx/iluminacion
 - python
 - selenium ([documentation](https://selenium-python.readthedocs.io/index.html))
 - Web browser: Google Chrome (https://www.google.com/chrome/) 
