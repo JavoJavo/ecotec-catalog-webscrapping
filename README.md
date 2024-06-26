@@ -1,8 +1,18 @@
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamlit.app/)                     
 # ecotec-catalog-webscrapping
+
+
+
 Ecotecs pending from scrapping ...   
 
-
+## Visualizations
+https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamlit.app/               
+### DEMO visualizations
+![demo1](https://github.com/JavoJavo/stoves-catalog-webscrapping/blob/main/peso_neto-flujo_luminoso-vida_util-potencia.png)
+![demo2](https://github.com/JavoJavo/stoves-catalog-webscrapping/blob/main/pot_cap-stove_feed_max-stove_price_average-stove_flife-Fit_line.png)
+![demo3](https://github.com/JavoJavo/ecotec-catalog-webscrapping/blob/main/1.png)
+![demo4](https://github.com/JavoJavo/ecotec-catalog-webscrapping/blob/main/2.png)
+![demo5](https://github.com/JavoJavo/ecotec-catalog-webscrapping/blob/main/3.png)
 ## Resources
 - OS: Windows 11
 - web pages: http://catalog.cleancookstoves.org/, https://www.lighting.philips.com.mx/inicio, https://www.homedepot.com.mx/iluminacion
@@ -34,14 +44,7 @@ Scrapped using `homedepot_lighting_scrapping.ipynb`.
 
 
 
-## Visualizations
-https://javojavo-stoves-catalog-webs-streamlit-appvisualizations-dym14c.streamlit.app/               
-### DEMO visualizations
-![demo1](https://github.com/JavoJavo/stoves-catalog-webscrapping/blob/main/peso_neto-flujo_luminoso-vida_util-potencia.png)
-![demo2](https://github.com/JavoJavo/stoves-catalog-webscrapping/blob/main/pot_cap-stove_feed_max-stove_price_average-stove_flife-Fit_line.png)
-![demo3](https://github.com/JavoJavo/ecotec-catalog-webscrapping/blob/main/1.png)
-![demo4](https://github.com/JavoJavo/ecotec-catalog-webscrapping/blob/main/2.png)
-![demo5](https://github.com/JavoJavo/ecotec-catalog-webscrapping/blob/main/3.png)
+
 
 ## TODO
 1. ~~Handle the double quotes so it doesn't mess the resulting csv file.~~             
