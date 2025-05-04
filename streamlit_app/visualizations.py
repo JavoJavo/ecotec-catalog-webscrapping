@@ -13,7 +13,7 @@ if dataset == 'stoves':
     DATA_URL = os.path.join(os.path.dirname(__file__), 'stoves4.csv')
     st.title("CLEAN COOKING CATALOG data")
 
-    @st.cache(persist=False)
+    @st.cache_data()
     def load_data():
         data = pd.read_csv(DATA_URL, na_values=['Not Available','null'])
         data.drop(data.columns[[11,12,13,14,16,18,23,28,33,38,43,48,53]],axis=1,inplace=True)
@@ -26,7 +26,7 @@ elif dataset == 'philips':
     DATA_URL = os.path.join(os.path.dirname(__file__), 'focos_philips5.csv')
     st.title("Philips Catalog data")
 
-    @st.cache(persist=False)
+    @st.cache_data()
     def load_data():
         data = pd.read_csv(DATA_URL, na_values=['Not Available','null'])
         #data.drop(data.columns[[11,12,13,14,16,18,23,28,33,38,43,48,53]],axis=1,inplace=True)
@@ -39,7 +39,7 @@ elif dataset == 'home depot':
     DATA_URL = os.path.join(os.path.dirname(__file__), 'homedepot_lighting.csv')
     st.title("Home Depot Catalog data")
 
-    @st.cache(persist=False)
+    @st.cache_data()
     def load_data():
         data = pd.read_csv(DATA_URL, na_values=['Not Available','null'])
         #data.drop(data.columns[[11,12,13,14,16,18,23,28,33,38,43,48,53]],axis=1,inplace=True)
